@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Title</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/github.min.css">
+<script src="https://cdn.jsdelivr.net/combine/gh/highlightjs/cdn-release@11.6.0/build/highlight.min.js,npm/@xiee/utils/js/load-highlight.js" async></script>
+
+
+
+<style type="text/css">
+body, td {
+  font-family: sans-serif;
+  background-color: white;
+  font-size: 13px;
+}
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  line-height: 1.5;
+}
+tt, code, pre {
+  font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+a:visited { color: #80007f; }
+pre, img { max-width: 100%; }
+code {
+  font-size: 92%;
+  border: 1px solid #ccc;
+}
+code[class] { background-color: #F8F8F8; }
+code.language-undefined { background-color: inherit; }
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee; }
+blockquote {
+  color:#666;
+  margin:0;
+  padding-left: 1em;
+  border-left: 0.5em #eee solid;
+}
+hr { border: 1px #ddd dashed; }
+
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+  }
+  body {
+    font-size: 12pt;
+    max-width: 100%;
+  }
+  a, a:visited { text-decoration: underline; }
+  hr {
+    visibility: hidden;
+    page-break-before: always;
+  }
+  pre, blockquote {
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page :left { margin: 15mm 20mm 15mm 10mm; }
+  @page :right { margin: 15mm 10mm 15mm 20mm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+</style>
+
+
+
+</head>
+
+<body>
+<h1>Title</h1>
+<p>Hello, [custom_name]! This is a test email with R markdown output.</p>
+<h2>Subtitle</h2>
+<p>This is a paragraph.</p>
+<p>| Column 1 | Column 2 |</p>
+<p>|–––––|–––––|</p>
+<p>| Value 1  | Value 2  |</p>
+<h2>Figure</h2>
+<pre><code class="language-r">x &lt;- 1:10
+
+y &lt;- x^2
+
+plot(x, y)
+</code></pre>
+<p><img src="data:image/png;base64,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" alt="plot of chunk unnamed-chunk-1" /></p>
+
+
+<script src="https://cdn.jsdelivr.net/combine/npm/@xiee/utils/js/center-img.min.js" async></script>
+</body>
+
+</html>
